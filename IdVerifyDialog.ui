@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui version="4.0">
+	<class>IdVerifyDialog</class>
+	<widget class="QDialog" name="IdVerifyDialog">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>400</width>
+				<height>200</height>
+			</rect>
+		</property>
+		<property name="windowTitle">
+			<string>身份验证</string>
+		</property>
+		<layout class="QVBoxLayout" name="verticalLayout">
+			<item>
+				<widget class="QLabel" name="label">
+					<property name="text">
+						<string>请输入身份证号进行验证：</string>
+					</property>
+				</widget>
+			</item>
+			<item>
+				<widget class="QLineEdit" name="idLineEdit"/>
+			</item>
+			<item>
+				<layout class="QHBoxLayout" name="horizontalLayout">
+					<item>
+						<widget class="QPushButton" name="verifyButton">
+							<property name="text">
+								<string>验证</string>
+							</property>
+						</widget>
+					</item>
+					<item>
+						<widget class="QPushButton" name="cancelButton">
+							<property name="text">
+								<string>取消</string>
+							</property>
+						</widget>
+					</item>
+				</layout>
+			</item>
+		</layout>
+	</widget>
+	<resources/>
+	<connections>
+		<connection>
+			<sender>verifyButton</sender>
+			<signal>clicked()</signal>
+			<receiver>IdVerifyDialog</receiver>
+			<slot>on_verifyButton_clicked()</slot>
+		</connection>
+		<connection>
+			<sender>cancelButton</sender>
+			<signal>clicked()</signal>
+			<receiver>IdVerifyDialog</receiver>
+			<slot>on_cancelButton_clicked()</slot>
+		</connection>
+	</connections>
+</ui>

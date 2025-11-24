@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>UserInfoDialog</class>
+	<widget class="QDialog" name="UserInfoDialog">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>400</width>
+				<height>300</height>
+			</rect>
+		</property>
+		<property name="windowTitle">
+			<string>用户信息</string>
+		</property>
+		<layout class="QVBoxLayout" name="verticalLayout">
+			<item>
+				<widget class="QLabel" name="nameLabel">
+					<property name="text">
+						<string>用户名：</string>
+					</property>
+				</widget>
+			</item>
+			<item>
+				<widget class="QLineEdit" name="usernameLineEdit"/>
+			</item>
+			<item>
+				<widget class="QLabel" name="phoneLabel">
+					<property name="text">
+						<string>手机号：</string>
+					</property>
+				</widget>
+			</item>
+			<item>
+				<widget class="QLineEdit" name="phoneLineEdit"/>
+			</item>
+			<item>
+				<widget class="QLabel" name="newpasswordLabel">
+					<property name="text">
+						<string>新密码（留空则不修改）：</string>
+					</property>
+				</widget>
+			</item>
+			<item>
+				<widget class="QLineEdit" name="newPasswordLineEdit">
+					<property name="echoMode">
+						<enum>QLineEdit::Password</enum>
+					</property>
+				</widget>
+			</item>
+			<item>
+				<widget class="QLabel" name="confirmpasswordlabel">
+					<property name="text">
+						<string>确认新密码：</string>
+					</property>
+				</widget>
+			</item>
+			<item>
+				<widget class="QLineEdit" name="confirmPasswordLineEdit">
+					<property name="echoMode">
+						<enum>QLineEdit::Password</enum>
+					</property>
+				</widget>
+			</item>
+			<item>
+				<layout class="QHBoxLayout" name="buttonLayout">
+					<item>
+						<widget class="QPushButton" name="saveButton">
+							<property name="text">
+								<string>保存</string>
+							</property>
+						</widget>
+					</item>
+					<item>
+						<widget class="QPushButton" name="cancelButton">
+							<property name="text">
+								<string>取消</string>
+							</property>
+						</widget>
+					</item>
+				</layout>
+			</item>
+		</layout>
+	</widget>
+	<resources/>
+	<connections/>
+</ui>
