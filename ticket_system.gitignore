@@ -1,0 +1,24 @@
+# Visual Studio 编译文件
+.vs/
+x64/
+ticket_system/
+Ticketsystem/
+
+# 临时文件
+Ticketsystem.ui.autosave
+Ticketsystem.vcxproj.user
+
+# 数据文件
+data/
+
+# 编译输出
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
